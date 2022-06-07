@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navBar{
+    background-color:midnightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navTitulo{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.navOpciones{
+    justify-content: space-between;
+}
+
+.navLinks{
+    padding:10px;
+    text-decoration: none;
+    color: white;
+}
