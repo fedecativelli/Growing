@@ -1,13 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .navBar{
     background-color:midnightblue;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .navTitulo{
@@ -16,12 +16,25 @@
     color: white;
 }
 
-.navOpciones{
-    justify-content: space-between;
-}
 
 .navLinks{
     padding:10px;
     text-decoration: none;
     color: white;
+}
+
+.navLinks li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+li{
+    list-style: none;
+    font-size: 0.75em;
 }
