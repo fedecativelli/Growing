@@ -1,6 +1,6 @@
 import LogoCarrito from "./CartImage.png";
-import "./Cart.css";
+import "./CartWidget.css";
 
-export const Cart = () => {
-    return <img className="CartLogo" src={LogoCarrito}></img>;
+export const CartWidget = () => {
+    return <img className="CartLogo" src={LogoCarrito} alt="icono de carrito"></img>;
 } 
