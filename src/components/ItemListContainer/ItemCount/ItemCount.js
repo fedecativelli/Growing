@@ -13,12 +13,11 @@ export const ItemCount = (props) => {
     }
 
     const quitar = () => {
-        if (selectCount > 1) {
+        if (selectCount >= 1) {
             setStockCount(stockCount + 1);
             setSelectCount(selectCount - 1);
         }
     }
-
 
     return <>
         <div>
@@ -30,3 +29,5 @@ export const ItemCount = (props) => {
         </div>
     </>
 }
+
+export default ItemCount;
