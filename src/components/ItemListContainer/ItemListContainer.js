@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import customFetch from "../utils/customFetch";
-import ItemList from "./ItemList/ItemList";
+import ItemList from "../ItemList/ItemList";
 import products from "../utils/products";
 import "./ItemListContainer.css";
 
@@ -11,6 +11,9 @@ export const ItemListContainer = () => {
 
     useEffect(() => {
         customFetch(2000, products)
+            .catch(() => {
+                console.log("Error");
+            })
             .then(result => setItem(result))
     }, [item]);
     return <>

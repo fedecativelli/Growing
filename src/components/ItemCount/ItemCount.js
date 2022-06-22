@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import "./ItemCount.css";
 
-export const ItemCount = (props) => {
+const ItemCount = (props) => {
     const { stock, initial } = props;
     const [stockCount, setStockCount] = useState(stock);
     const [selectCount, setSelectCount] = useState(parseInt(initial));
@@ -23,8 +24,8 @@ export const ItemCount = (props) => {
         <div>
             <h2>Stock: {stockCount}</h2>
             <h3>Seleccionados: {selectCount}</h3>
-            <button onClick={quitar}>Quitar</button>
-            <button onClick={agregar}>Agregar</button>
+            <button className="button2" onClick={quitar}>Quitar</button>
+            <button className="button1" onClick={agregar}>Agregar</button>
 
         </div>
     </>

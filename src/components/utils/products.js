@@ -1,7 +1,7 @@
 const products = [
     {
         id: 1,
-        name: "Carpa 1",
+        name: "Producto 1",
         price: 10,
         stock: 10,
         initial: 0,
@@ -9,7 +9,7 @@ const products = [
     },
     {
         id: 2,
-        name: "Carpa 2",
+        name: "Producto 2",
         price: 10,
         stock: 20,
         initial: 0,
@@ -17,7 +17,7 @@ const products = [
     },
     {
         id: 3,
-        name: "Carpa 3",
+        name: "Producto 3",
         price: 10,
         stock: 30,
         initial: 0,

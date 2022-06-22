@@ -1,6 +1,7 @@
 import React from 'react';
 import Item from "../Item/Item";
 
+
 function ItemList({ products }) {
     return (
         products.map(p =>
@@ -9,7 +10,7 @@ function ItemList({ products }) {
                 {...p} //name={p.name}, price={p.price},etc//
             />
         )
-    )
-}
+    );
+};
 
 export default ItemList;
