@@ -16,14 +16,13 @@ export const ItemListContainer = () => {
             })
             .then(result => setItem(result))
     }, [item]);
-    return <>
-        <>
-            <section className="container">
-                {
-                    item?.length <= 0 ? <h1>Cargando, no seas ansiosx....</h1> : <ItemList products={item} />
-                }
 
-            </section>
-        </>
+    return <>
+        <section className="container">
+            {
+                item?.length <= 0 ? <h1>Cargando, no seas ansiosx....</h1> : <ItemList products={item} />
+            }
+        </section>
+
     </>
 }

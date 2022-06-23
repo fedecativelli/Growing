@@ -5,3 +5,21 @@
     text-align: center;
     font-family: arial;
   }
+
+  .btn-details{
+    background-color: white;
+    color: black;
+    border: 2px solid #3678f4;
+    transition-duration: 0.4s;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:5px;
+  }
+
+  .btn-details:hover {
+    background-color: #3678f4; 
+    color: white;
+  }
